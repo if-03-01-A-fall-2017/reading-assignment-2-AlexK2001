@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cheatsheet</title>
+  </head>
+  <body>
+    <h1>Reading Assignment 2</h1>
+    <section>
+      <h2>HTML</h2>
+        <h3>1. Name the components of html elements properly</h3>
+        <p>An HTML element consists of a start tag and end tag, content is between.The HTML element is everything from the start tag to the end tag.</p>
+        <h3>2. Identify void elements and how they are denoted</h3>
+        <p>HTML elements with no content are called void elements. Void elements don't have an end tag, such as the br element (which indicates a line break).</p>
+        <p>HTML5 does not require empty elements to be closed. But if you want stricter validation, or if you need to make your document readable by XML parsers, you must close all HTML elements properly.</p>
+        <h3>3. Identify attributes</h3>
+        <ul>
+          <li>All HTML elements can have attributes</li>
+          <li>Attributes provide additional information about an element</li>
+          <li>Attributes are always specified in the start tag</li>
+          <li>Attributes usually come in name/value pairs like: name="value"</li>
+        </ul>
+        <h3>4. Write down the correct DOCTYPE declaration for html 5</h3>
+        <p>!DOCTYPE html</p>
+        <h3>5. Write down syntactically correct statements for the following elements</h3>
+        <h4>article</h4>
+        <p>The article tag specifies independent, self-contained content.</p>
+          <h4>body</h4>
+        <p>The body element defines the document body.I t has a start tag and an end tag.The element content is two other HTML elements (h1 and p).</p>
+        <h4>line break (br)</h4>
+        <p>This text contains<br>a line break.</p>
+        <h4>Headings</h4>
+        <p>Search engines use the headings to index the structure and content of your web pages.Users skim your pages by its headings. It is important to use headings to show the document structure.</p>
+        <h4>head</h4>
+        <p>The head element is a container for metadata.HTML metadata is data about the HTML document.</p>
+        <h4>top level element html</h4>
+        <p>The html element defines the whole document.The element content is another HTML element (the body element).</p>
+        <h4>Image named Team.jpg (img src="Team.jpg")</h4>
+        <p>The img tag is empty, it contains attributes only, and does not have a closing tag. The src attribute specifies the URL (web address) of the image.</p>
+        <h4>paragraph</h4>
+        <p>With HTML, you cannot change the output by adding extra spaces or extra lines in your HTML code. The browser will remove any extra spaces and extra lines when the page is displayed</p>
+        <h4>section</h4>
+        <p>The section tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document.</p>
+        <h4>title</h4>
+        <p>the title element defines the title of the document, and is required in all HTML/XHTML documents.</p>
+          <p>The title element:</p>
+          <ul>
+            <li>defines a title in the browser tab</li>
+            <li>provides a title for the page when it is added to favorites</li>
+            <li>displays a title for the page in search engine results</li>
+          </ul>
+          <h4>link to other pages(a)</h4>
+          <p></p>
+          <h4>comment</h4>
+          <h5>link colors</h5>
+          <p>style</p>
+          <p>a:link {color: green; background-color: transparent; text-decoration: none;</p>
+          <h5>image as link</h5>
+          <p>a href="default.asp" img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;">a </p>
+    </section>
+    <section>
+      <h2>CSS</h2>
+      <h3>1. Name the components of a css rule properly</h3>
+      <p>A CSS rule-set consists of a selector and a declaration block. z.B h1 {color: blue; font-size:12px;} selector:h1, Declaration: color = Property, blue= Value, font-size=Property, 12px = Value)</p>
+      <h3>2. Use combinators properly: direct child, descendant, adjacent sibling, sibling</h3>
+      <p>descendet:div p {background-color: yellow;}, direct child: div > p {background-color: yellow;}, adjacent sibling:div + p {background-color: yellow;}, sibling: div ~ p {background-color: yellow;} </p>
+      <h3>3. Specify colors by color names and in hexadecimal notation</h3>
+      <p>h1 style="background-color:DodgerBlue;">Hello World h1</p>
+      <p>h1 style="background-color:#ff6347;">Hello World h1</p>
+      <h3>4. Declarations for color, background color</h3>
+      <p>h1 style="color:Tomato;">Hello World h1</p>
+      <p>h1 style="background-color:Tomato;">Hello World h1</p>
+      <h3>5. Pseudo classes for the "a" element</h3>
+      <p>/* unvisited link */ a:link {color: #FF0000;}</p>
+      <p>/* visited link */ a:visited {color: #00FF00;}</p>
+      <p>/* mouse over link */ a:hover {color: #FF00FF;}</p>
+      <p>/* selected link */ a:active {color: #0000FF;}</p>
+      <h3>6. Declaration for background image</h3>
+      <p>body {background-image: url("paper.gif");}</p>
+      <h3>7. Declaration for text alignment (left, right, center, justify)</h3>
+      <p>h1 {text-align: center;}</p>
+      <p>h2 {text-align: left;}</p>
+      <p>h3 {text-align: right;}</p>
+      <p>div {text-align: justify;}</p>
+      <h3>8. Declaration for text decoration (overline, underline, line-through)</h3>
+      <p>h1 {text-decoration: overline;}</p>
+      <p>h1 {text-decoration: underline;}</p>
+      <p>h1 {text-decoration: line-through;}</p>
+      <h3>9. Declaration for text transformation (uppercase, lowercase, capitalize)</h3>
+      <p>p.uppercase {text-transform: uppercase;}</p>
+      <p>p.lowercase {text-transform: lowercase;}</p>
+      <p>p.capitalize {text-transform: capitalize;}</p>
+      <h3>10. Identify the difference between serif and sans-serif fonts</h3>
+      <p>San Sans-serif is Arial and Serif is Times New Roman</p>
+      <h3>11. Declarations for font families</h3>
+      <p>p {font-family: "Times New Roman", Times, serif; }</p>
+      <h3>12. Declarations for font style normal and italic</h3>
+      <p>p.normal {font-style: normal;}</p>
+      <p>p.italic {font-style: italic;}</p>
+      <h3>13. Declarations for font sizes</h3>
+      <p>h1 {font-size: 40px;}</p>
+      <p>h1 {font-size: 2.5em; /* 40px/16=2.5em */}</p>
+      <p>body {font-size: 100%;}/*the solution that works in all browsers, is to set a default font-size in percent for the body element*/</p>
+      <h3>14. Declarations for font weights</h3>
+      <p>p.normal {font-weight: normal;}</p>
+      <p>p.thick {font-weight: bold;}</p>
+
+    </section>
+  </body>
+</html>
